@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevBlog</title>
+    <link rel="icon" type="image/x-icon" href="Images/Icons/DevblogAsterisk.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">8
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="Images/Icons/Devblog.png" class="img-fluid" alt="..."
+                    style="width: 150; height: 48;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link active me-2" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a href="createDevlog.html"><button type="button" class="btn btn-warning"
+                                style="border-radius: 20px;">Create</button></a>
+                    </li>
+                    <!-- Search bar -->
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" size="130"
+                        style="border-radius: 20px;">
+                    </li>
+                </ul>
+                <form class="justify-content-end">
+                    <!--Notification-->
+                    <img src="Images/Icons/NotificationIcon.png" class="img-fluid me-3" alt="..."
+                        style="width: 40px;height: 40px;">
+                </form>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle btn-outline-warning" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><img src="..." class="me-3" alt="..."
+                            style="width: 40px;height: 40px; border-radius: 50%;">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="profilePageMyDevblog.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="createDevlog.html">Create</a></li>
+                        <li><a class="dropdown-item" href="settingEditProfile.html">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="position-absolute start-50 translate-middle mb-5" style="top: 92%;">
+        <div class="card" style="width: 50rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <h4>Create DevBlog</h4>
+                </li>
+                <li class="list-group-item">
+                    <label for="DevlogTitleInput" class="form-label">Title</label>
+                    <form class="d-flex" role="search">
+                        <input class="form-control mb-4" type="text" placeholder="Required" id="DevlogTitleInput"
+                            style="border-radius: 16px;">
+                    </form>
+                </li>
+                <li class="list-group-item">
+                    <label for="DevlogTitleInput" class="form-label mt-3">Project and Post Type</label>
+                    <p>Help your post get indexed and discovered by others. Please be accurate in your selection.</p>
+                    <h5>Project Type</h5>
+                    <p>Type of project your making.</p>
+                    <div class="container text-start">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Game</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>App</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Game Asset</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Physical Game</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Tool</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Custom</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Post Type</h5>
+                    <p>Type of post your making.</p>
+                    <div class="container text-start">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Update</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Tutorial</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Marketing</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Announcement</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Discussion</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Custom</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <b>Custom</b>
+                                    </label>
+                                    <p>Gamemmeme</p>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+                <li class="list-group-item">
+                    <!-- Tags -->
+                    <label for="CurrentPasswordInput" class="form-label mt-3">Tags <small class="text-body-tertiary">—
+                            Use tags to organize your posts </small></label>
+                    <form class="d-flex" role="search">
+                        <input class="form-control mb-4" type="text" placeholder="Press enter to save tag"
+                            id="CurrentPasswordInput" style="border-radius: 16px;">
+                    </form>
+
+                    <!-- Original publish date -->
+                    <label for="CurrentPasswordInput" class="form-label">Original publish date <small
+                            class="text-body-tertiary">
+                            — Are you migrating an older post? Provide the date the post was originally published
+                        </small></label>
+                    <form class="d-flex" role="search">
+                        <input class="form-control mb-4" type="text" placeholder="Optional" id="CurrentPasswordInput"
+                            style="border-radius: 16px;">
+                    </form>
+                </li>
+                <li class="list-group-item">
+                    <b class="mt-3">Comments</b>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Enable comments <small class="text-body-tertiary">— itch.io account holders can leave a comment</small>
+                        </label>
+                    </div>
+
+                    <b>Visibility</b>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Published <small class="text-body-tertiary">— Everyone who can see your project page can see this post</small>
+                        </label>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="card-footer">
+                <button type="button" class="btn btn-warning">Safety</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
